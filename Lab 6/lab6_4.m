@@ -1,0 +1,6 @@
+G=tf([1,1],[1,2])
+H=tf([1],[1,1])
+t=feedback(G,H)
+pzmap(t)
+[p z]=pzmap(t)
+minreal(t)
